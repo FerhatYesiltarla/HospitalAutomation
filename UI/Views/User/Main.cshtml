@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Main</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/fystrap/fyStrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            @Html.Partial("~/Views/Partial/NavbarSignInHeader.cshtml")
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+               @Html.Partial("~/Views/Partial/UserSideNavbar.cshtml")
+            </div>
+            @*
+            giriş yapıldı  -
+            @HttpContext.Current.User.Identity.Name.Split('-')[1] - @HttpContext.Current.User.Identity.Name.Split('-')[2]
+            <a href="/account/signout"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a>
+            *@
+	    </div>
+    </div>
+</body>
+</html>
+<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/fyStrap/fyStrap.js"></script>

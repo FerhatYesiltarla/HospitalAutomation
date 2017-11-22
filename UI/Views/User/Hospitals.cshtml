@@ -1,0 +1,15 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model List<DAL.ORM.Entity.Hospital>
+
+<div> 
+	@foreach (var item in Model)
+	{
+		<ul>
+			<li>@item.Name</li>
+		</ul>
+	}
+</div>
